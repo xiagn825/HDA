@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>NCEE Channel</title>
+
+<link rel="stylesheet" href="../../lib/kendo/styles/kendo.common.min.css">
+<link rel="stylesheet" href="../../lib/kendo/styles/kendo.common.core.min.css">
+<link rel="stylesheet" href="../../lib/kendo/styles/kendo.blueopal.min.css">
+
+<script type="text/javascript" src="../../lib/jquery/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../lib/kendo/js/kendo.core.min.js"></script>
+<script type="text/javascript" src="../../lib/kendo/js/kendo.ui.core.min.js"></script>
+<script type="text/javascript" src="../../lib/kendo/js/kendo.button.min.js"></script>
+<script type="text/javascript" src="../../lib/kendo/js/kendo.dropdownlist.min.js"></script>
+<script type="text/javascript" src="../../js/cmn/hda_util.js"></script>
+<script type="text/javascript" src="../../js/ncee/nceeModel.js"></script>
+<script type="text/javascript" src="../../js/ncee/nceeView.js"></script>
+<script type="text/javascript" src="../../js/ncee/main.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="examineeInfo">
+			<table>
+				<tbody>
+					<tr>
+						<td><span>考生所在省份</span></td>
+						<td><div id="province"></div></td>
+					</tr>
+					<tr>
+						<td><span>考生成绩</span></td>
+						<td><input type="text" id="score" class="k-textbox"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<br/>
+		<div id="individualTendency">
+			<table>
+				<tbody>
+					<tr>
+						<td><span>院校所在省份</span></td>
+						<td><div id="collegeProvince"></div></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<br/>
+		<div>
+			<Button id="submit">提 交</Button>
+		</div>
+	</div>
+</body>
+</html>

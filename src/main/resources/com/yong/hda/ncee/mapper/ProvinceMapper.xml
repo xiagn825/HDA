@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.yong.hda.ncee.mapper.ProvinceMapper">
+
+    <select id="selectAll" resultMap="ProvinceResultMap">
+        SELECT
+             PROVINCE_CODE       AS PROVINCE_CODE
+            ,PROVINCE_NAME       AS PROVINCE_NAME
+            ,PROVINCE_NAME_SHORT AS PROVINCE_NAME_SHORT
+        FROM
+            PROVINCE
+    </select>
+
+    <resultMap id="ProvinceResultMap" type="com.yong.hda.ncee.model.Province">
+        <id property="provinceCode" column="PROVINCE_CODE"/>
+        <id property="provinceName" column="PROVINCE_NAME"/>
+        <id property="provinceNameShort" column="PROVINCE_NAME_SHORT"/>
+    </resultMap>
+
+</mapper>

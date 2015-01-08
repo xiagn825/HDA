@@ -1,0 +1,3 @@
+$(function(){
+	nceeView.initialize();
+});

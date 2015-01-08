@@ -1,0 +1,10 @@
+@@./ddl/CODE_VALUE.sql;
+@@./ddl/COLLEGE.sql;
+@@./ddl/PROVINCE.sql;
+@@./ddl/SCORE_PROVINCE.sql;
+@@./ddl/SPECIALTY.sql;
+@@./ddl/SPECIALTY_COLLEGE.sql;
+@@./dml/CODE_VALUE.sql;
+@@./dml/PROVINCE.sql;
+@@./dml/SCORE_PROVINCE.sql;
+exit;
