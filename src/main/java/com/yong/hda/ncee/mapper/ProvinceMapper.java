@@ -2,8 +2,8 @@ package com.yong.hda.ncee.mapper;
 
 import java.util.List;
 
-import com.yong.hda.ncee.model.Province;
+import com.yong.hda.ncee.model.ProvinceModel;
 
 public interface ProvinceMapper {
-	List<Province> selectAll();
+	List<ProvinceModel> selectAll();
 }

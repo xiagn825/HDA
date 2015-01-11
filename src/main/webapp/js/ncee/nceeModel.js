@@ -1,13 +1,14 @@
 var nceeModel = {
 	provinces: [],
 	setObjData: function(data) {
-		if (isNullOrUndef(data)) return;
+		if (CmnUtil.isNullOrUndef(data)) return;
 		
-		var obj;
-		for (var i = 0; i < data.lenght; i++) {
-			obj = data[i];
-			if (obj.tbl === "province") {
-				this.provinces.push({"value": obj.value, "text": obj.text});
+		var dropDownListData;
+		var dropDownListDataLst = data.dropDownListDataLst;
+		for (var i = 0; i < dropDownListDataLst.lenght; i++) {
+			dropDownListData = dropDownListDataLst[i];
+			if (dropDownListData.id === "province") {
+				this.provinces.push({"value": dropDownListData.value, "text": dropDownListData.text});
 			}
 		}
 	}

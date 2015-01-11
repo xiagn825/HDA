@@ -1,24 +1,29 @@
 package com.yong.hda.ncee.dto;
 
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-
 import org.springframework.stereotype.Component;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 @Component
-@XmlRootElement(name = "valueText")
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class ValueText {
+public class DropDownListData {
+	@JsonProperty("id")
+	private String id;
+	
 	@JsonProperty("value")
 	private String value;
 
 	@JsonProperty("text")
 	private String text;
+
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
 	
-	@XmlElement(name = "value")
 	public String getValue() {
 		return value;
 	}
@@ -26,7 +31,6 @@ public class ValueText {
 		this.value = value;
 	}
 	
-	@XmlElement(name = "text")
 	public String getText() {
 		return text;
 	}

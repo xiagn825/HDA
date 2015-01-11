@@ -4,7 +4,7 @@
 
 <mapper namespace="com.yong.hda.ncee.mapper.ProvinceMapper">
 
-    <select id="selectAll" resultMap="ProvinceResultMap">
+    <select id="selectAll" resultMap="selectAllResultMap">
         SELECT
              PROVINCE_CODE       AS PROVINCE_CODE
             ,PROVINCE_NAME       AS PROVINCE_NAME
@@ -13,7 +13,7 @@
             PROVINCE
     </select>
 
-    <resultMap id="ProvinceResultMap" type="com.yong.hda.ncee.model.Province">
+    <resultMap id="selectAllResultMap" type="com.yong.hda.ncee.model.ProvinceModel">
         <id property="provinceCode" column="PROVINCE_CODE"/>
         <id property="provinceName" column="PROVINCE_NAME"/>
         <id property="provinceNameShort" column="PROVINCE_NAME_SHORT"/>

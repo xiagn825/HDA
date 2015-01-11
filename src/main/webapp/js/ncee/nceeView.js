@@ -1,7 +1,7 @@
 var nceeView = {
 	model: {},
 	initialize: function() {
-		this.model = new nceeModel();
+		this.model = nceeModel;
 		this.getInitData();
 	},
 	render: function() {
@@ -24,12 +24,10 @@ var nceeView = {
 		});
 	},
 	getInitData: function() {
-		var target = ["province"];
-		
 		$.ajax({
 			type: "POST",
-			url: "/hda/channel/ncee/db",
-			data: target,
+			url: "/hda/channel/ncee/init",
+			data: null,
 			dataType: "json",
 			contentType: "application/json",
 			success: function(data, sts, xhr) {

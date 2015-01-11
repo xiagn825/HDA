@@ -1,18 +1,13 @@
 package com.yong.hda.ncee.model;
 
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-
 import org.springframework.stereotype.Component;
 
 @Component
-@XmlRootElement(name = "province")
-public class Province {
+public class ProvinceModel {
 	private String provinceCode;
 	private String provinceName;
 	private String provinceNameShort;
 	
-	@XmlElement(name = "provinceCode")
 	public String getProvinceCode() {
 		return provinceCode;
 	}
@@ -20,7 +15,6 @@ public class Province {
 		this.provinceCode = provinceCode;
 	}
 	
-	@XmlElement(name = "provinceName")
 	public String getProvinceName() {
 		return provinceName;
 	}
@@ -28,7 +22,6 @@ public class Province {
 		this.provinceName = provinceName;
 	}
 	
-	@XmlElement(name = "provinceNameShort")
 	public String getProvinceNameShort() {
 		return provinceNameShort;
 	}
